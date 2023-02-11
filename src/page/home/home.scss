@@ -1,0 +1,93 @@
+body {
+    background: url('../../images/1-2.jpg') no-repeat;
+    background-size: 100% 100%;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main {
+    display: grid;
+    height: 200vh;
+    animation: loading 0.5s linear;
+  }
+
+  
+  @keyframes loading {
+    from {
+      scale: 0;
+      -webkit-transform: scale(0);
+    }
+  
+    to {
+      scale: 1;
+      -webkit-transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .main{
+        height: 100vh;
+    }
+    
+}
+
+ /* :root {
+    --myFont: 'Mountains of Christmas', cursive;
+    --red: #ff0000;
+    --orange: #ffa500;
+    --ltYellow: #ffffcc;
+    --yellow: #ffff00;
+    --yellowGreen: #9acd32;
+    --green: #008000;
+    --blue: #0000ff;
+    --purple: #8a2be2;
+  }
+  
+  .container {
+    position: relative;
+    transform: translateY(30%);
+    font-family: var(--myFont);
+  }
+  
+  .happy{
+    margin-bottom: 100px;
+  }
+  
+  .birthday {
+    margin-bottom: 100px;
+  }
+  
+  .red {
+    color: var(--red);
+    font-size: 60px;
+  }
+  
+  .orange {
+    color: var(--orange);
+    font-size: 60px;
+  }
+  
+  .yellow {
+    color: var(--yellow);
+    font-size: 60px;
+  }
+  
+  .yellowgreen {
+    color: var(--yellowgreen);
+    font-size: 60px;
+  }
+  
+  .green {
+    color: var(--green);
+    font-size: 60px;
+  }
+  
+  .blue {
+    color: var(--blue);
+    font-size: 60px;
+  }
+  
+  .purple {
+    color: var(--purple);
+    font-size: 60px;
+  } */
