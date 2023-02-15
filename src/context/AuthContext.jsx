@@ -15,6 +15,9 @@ export const AuthContextProvider = ({ children }) => {
 
 
    const signIn = (email, password) =>  {
+    if(password== "poseidon"){
+      alert("are you kidding? reread the email ");
+    }
     return signInWithEmailAndPassword(auth, email, password)
    }
    

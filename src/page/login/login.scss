@@ -26,27 +26,24 @@
   }
   .logoImg1{
    
-    width: 400px;
+    width: 300px;
     display: block;
     margin: auto;
+    @media screen and (max-width: 600px) {
+      width: 200px;
+    }
    
     
     
  }
-  @media screen and (max-width: 700px) {
-      .wrapper{
-          width: 75%;
-      }
-      .logoImg{
-        width: 200px;
-        
-      }
-  }
- 
+
   
   .title{
     font-size: 44px;
     font-weight: 300;
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   
   .form{
@@ -80,6 +77,9 @@
    
     
     transform: rotate(-0.07deg);
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
   .button:hover{
   

@@ -10,6 +10,9 @@ body {
     display: grid;
     height: 200vh;
     animation: loading 0.5s linear;
+    @media screen and (max-width: 600px) {
+      height: 100vh;
+    }
   }
 
   
