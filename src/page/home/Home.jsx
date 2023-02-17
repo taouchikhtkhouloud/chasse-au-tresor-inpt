@@ -6,6 +6,9 @@ import './home.scss'
 import Confetti from "react-confetti";
 const TEXT = 'Congrats !!  ';
 import logo from '../../images/logo olympiades vertical.png'
+import { db , auth } from '../../fire';
+import { set, ref, onValue, remove, update } from "firebase/database";
+
 const Home = () => {
   const canvasRef = React.useRef(null)
 
@@ -16,6 +19,28 @@ const Home = () => {
     // See my comments in sketch.js
     new p5(sketch(canvasDivElement, TEXT), canvasDivElement);
   })
+  
+
+// Get the current user
+const user = auth.currentUser;
+
+if (user) {
+  // User is signed in
+  const lastSignInTime = user.metadata.lastSignInTime;
+  const email = user.email;
+ 
+  // Reference to the user's data in the Firebase Realtime Database
+  set(ref(db, `/${auth.currentUser.uid}`), {
+    lastSignInTime: lastSignInTime,
+    email: email
+  });
+
+  console.log("Last sign-in time: ", lastSignInTime);
+} else {
+  // No user is signed in
+  console.log("No user signed in");
+}
+
 
   return (
     <div className="wraper">
