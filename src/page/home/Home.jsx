@@ -5,7 +5,7 @@ import p5 from 'p5';
 import './home.scss'
 import Confetti from "react-confetti";
 const TEXT = 'Congrats !!  ';
-
+import logo from '../../images/logo olympiades vertical.png'
 const Home = () => {
   const canvasRef = React.useRef(null)
 
@@ -20,6 +20,9 @@ const Home = () => {
   return (
     <div className="wraper">
 <Confetti />
+
+
+    <img className='image' src={logo} alt="" />
     <div className="main ">
       
       <div ref={canvasRef} />

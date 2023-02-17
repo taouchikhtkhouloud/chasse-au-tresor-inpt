@@ -14,6 +14,18 @@ body {
       height: 100vh;
     }
   }
+  .image{
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  .wraper{
+    background-color: rgba(238, 103, 103, 0.305);
+    border: 0px ;
+    border-radius: 30px;
+    margin-top: 30px;
+    
+  }
 
   
   @keyframes loading {
@@ -33,64 +45,3 @@ body {
     }
     
 }
-
- /* :root {
-    --myFont: 'Mountains of Christmas', cursive;
-    --red: #ff0000;
-    --orange: #ffa500;
-    --ltYellow: #ffffcc;
-    --yellow: #ffff00;
-    --yellowGreen: #9acd32;
-    --green: #008000;
-    --blue: #0000ff;
-    --purple: #8a2be2;
-  }
-  
-  .container {
-    position: relative;
-    transform: translateY(30%);
-    font-family: var(--myFont);
-  }
-  
-  .happy{
-    margin-bottom: 100px;
-  }
-  
-  .birthday {
-    margin-bottom: 100px;
-  }
-  
-  .red {
-    color: var(--red);
-    font-size: 60px;
-  }
-  
-  .orange {
-    color: var(--orange);
-    font-size: 60px;
-  }
-  
-  .yellow {
-    color: var(--yellow);
-    font-size: 60px;
-  }
-  
-  .yellowgreen {
-    color: var(--yellowgreen);
-    font-size: 60px;
-  }
-  
-  .green {
-    color: var(--green);
-    font-size: 60px;
-  }
-  
-  .blue {
-    color: var(--blue);
-    font-size: 60px;
-  }
-  
-  .purple {
-    color: var(--purple);
-    font-size: 60px;
-  } */

@@ -13,7 +13,7 @@ export default class Dot {
     this.acceleration = p5.Vector.random2D();
     this.zeroVector = this.sketch.createVector(0, 0); // don't modify
 
-    this.radius = 8;
+    this.radius = 4;
     this.maxSpeed = 12;
     this.maxForce = 4;
     this.maxMagnitude = 50;
